@@ -1,0 +1,59 @@
+/* CSS Styling */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f0f8ff;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background: #444;
+}
+nav a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+nav a:hover {
+    background: #555;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+section {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+section h2 {
+    text-align: center;
+    color: #333;
+}
+.skills ul, .education ul, .projects ul {
+    list-style: none;
+    padding: 0;
+}
+.skills li, .education li, .projects li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
