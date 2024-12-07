@@ -1,0 +1,92 @@
+<!-- HTML Document -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Rohith Sarikela</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Rohith Sarikela</h1>
+        <p>Full Stack Developer | Tech Enthusiast</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Enthusiastic and driven Full Stack Developer with strong programming skills in Python, C++, and JavaScript. Adept at designing and developing scalable solutions, including responsive web applications and APIs.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, JavaScript, C++, C</li>
+                <li>Frameworks: React.js, Node.js, Express.js</li>
+                <li>Technologies: MongoDB, HTML, CSS, TypeScript</li>
+                <li>Tools: Git, Linux</li>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>B. Tech, ECE - Malla Reddy College of Engineering (2021-2025)</li>
+                <li>Intermediate, MPC - Shree Gayathri Junior College (2019-2021)</li>
+                <li>SSE - Naveen Vidyaniketan High School (2018-2019)</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>NxtTrend - E-commerce Web Application:</strong> A dynamic platform with secure user authentication, shopping cart, and responsive design.
+                </li>
+                <li>
+                    <strong>LitPicks - Custom Book Recommendations:</strong> A recommendation system using Python, pandas, and cosine similarity with Streamlit-based UI.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:rohithsarikela9542@gmail.com">rohithsarikela9542@gmail.com</a></p>
+            <p>Phone: +91 9542485697</p>
+            <p>LinkedIn: <a href="http://www.linkedin.com/in/rohithsarikela" target="_blank">rohithsarikela</a></p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Rohith Sarikela. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</body>
+</html>
